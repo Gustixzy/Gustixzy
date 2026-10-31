@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form - ศุภกร สีหศักดิ์</title>
+    <!-- โหลด Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ไฟล์ CSS เพิ่มเติม (ใช้ร่วมกับเรซูเม่หลักได้) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <!-- Navbar สำหรับกดกลับหน้าหลัก -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">My Resume</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link btn btn-outline-light btn-sm px-3 text-dark bg-white" href="index.html">กลับสู่หน้าหลัก</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container สำหรับ Contact Form -->
+    <main class="container my-5 pt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow-sm border-0 p-4">
+                    <div class="card-body">
+                        <h2 class="h3 fw-bold text-center mb-4 text-primary">ติดต่อเรา (Contact Form)</h2>
+                        <p class="text-muted text-center mb-4">
+                            หากต้องการสอบถามข้อมูลเพิ่มเติม สามารถกรอกแบบฟอร์มด้านล่างนี้ได้ครับ
+                        </p>
+
+                        <!-- ฟอร์มติดต่อ -->
+                        <form action="#" method="POST">
+                            <!-- ชื่อผู้ติดต่อ -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label fw-semibold">ชื่อ - นามสกุล / บริษัท</label>
+                                <input type="text" class="form-control" id="name" placeholder="กรอกชื่อของคุณ..." required>
+                            </div>
+
+                            <!-- อีเมล -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-semibold">อีเมลสำหรับติดต่อกลับ</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                            </div>
+
+                            <!-- หัวข้อ / เรื่องที่ติดต่อ -->
+                            <div class="mb-3">
+                                <label for="subject" class="form-label fw-semibold">หัวข้อเรื่อง</label>
+                                <input type="text" class="form-control" id="subject" placeholder="เช่น ติดต่อเรื่องฝึกงาน, สอบถามโปรเจกต์" required>
+                            </div>
+
+                            <!-- ข้อความ -->
+                            <div class="mb-3">
+                                <label for="message" class="form-label fw-semibold">ข้อความ</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="พิมพ์ข้อความของคุณที่นี่..." required></textarea>
+                            </div>
+
+                            <!-- ปุ่มส่งข้อมูล -->
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary fw-bold py-2">ส่งข้อความ</button>
+                                <a href="index.html" class="btn btn-secondary py-2">ย้อนกลับ</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0 text-muted">© 2026 Suphakorn Seehasak. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
